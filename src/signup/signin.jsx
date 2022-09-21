@@ -1,9 +1,8 @@
-import React from "react";
-import "./signup.css";
+import React from 'react';
 import SignupImg from "../assets/images/signup.png";
-import SignupForm from "./signupForm";
+import SigninForm from './signinForm';
 
-function Signup() {
+function Signin() {
   return (
     <div className="container-fluid layout m-0 p-0">
       <div className="row layout p-0 m-0">
@@ -11,11 +10,11 @@ function Signup() {
           <img src={SignupImg} style={{width: '80%'}}></img>
         </div>
         <div className="col-6 dis-props px-3 m-0">
-         <SignupForm />
+         <SigninForm />
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Signup;
+export default Signin;

@@ -12,7 +12,7 @@ function Dashboard() {
           <div className="col-3 p-0 pe-1 pb-3">
             <div className="row p-0">
               <div className="col-12">
-                <div className="card p-0 m-0">
+                <div className="Dash-card p-0 m-0">
                   <div
                     style={{ width: "100%", display: "flex", flexWrap: "wrap" }}
                   >
@@ -32,7 +32,7 @@ function Dashboard() {
                 </div>
               </div>
               <div className="col-12 pt-3">
-                <div className="card p-0 m-0">
+                <div className="Dash-card p-0 m-0">
                   <div
                     style={{ width: "100%", display: "flex", flexWrap: "wrap" }}
                   >
@@ -52,7 +52,7 @@ function Dashboard() {
                 </div>
               </div>
               <div className="col-12 pt-3">
-                <div className="card p-0 m-0">
+                <div className="Dash-card p-0 m-0">
                   <div
                     style={{ width: "100%", display: "flex", flexWrap: "wrap" }}
                   >
@@ -84,14 +84,14 @@ function Dashboard() {
             </div>
           </div>
           <div className="col-9 p-0 ps-2 pb-3">
-            <div className="card p-0 m-0" style={{ height: "100%" }}>
+            <div className="Dash-card p-0 m-0" style={{ height: "100%" }}>
               <p className="text-start p-3">Users Report</p>
             </div>
           </div>
         </div>
         <div className="row p-0">
           <div className="col-12 p-0">
-          <div className="card p-0 m-0" style={{ height: "100%" }}>
+          <div className="Dash-card p-0 m-0" style={{ height: "100%" }}>
               <p className="text-start p-3">Trending Accelerators</p>
             </div>
           </div>

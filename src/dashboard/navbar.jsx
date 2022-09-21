@@ -5,7 +5,7 @@ import avatar from "../assets/images/sample.png";
 
 function Navbar() {
   return (
-      <nav className="navbar" style={{backgroundColor: '#fff'}}>
+      <nav className="navbar" style={{height: '100%',backgroundColor: '#fff'}}>
         <div className="container-fluid dis-last p-0">
           <a className="navbar-brand" href="#">
             <img src={Notify} alt="" width="25" height="24" />

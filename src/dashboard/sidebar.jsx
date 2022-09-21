@@ -1,10 +1,25 @@
-import React from "react";
+import React, {useState} from "react";
 import COE from "../assets/images/Coe-logo.png";
-import Acc from "../assets/images/BuiltIn.png";
+import AccImg from "../assets/images/BuiltIn.png";
 import Report from "../assets/images/DataLineChart.png";
 import Dboard from "../assets/images/Dashboard.png";
+import { useHistory } from "react-router-dom";
 
 function Sidebar() {
+
+  const history = useHistory();
+
+  const [ActiveClr, setActiveClr] = useState(false);
+
+  const Dashboard = () => {
+    history.push('/Dashboard')
+    setActiveClr(true)
+  }
+
+  const Acc = () => {
+    history.push('/Accelerator')
+  }
+
   return (
     <div
       className="d-flex flex-column flex-shrink-0 text-white"
@@ -17,11 +32,12 @@ function Sidebar() {
         <img className="coe-img px-3 p-2" src={COE}></img>
       </a>
       <ul className="nav nav-pills flex-column mb-auto">
-        <li className="nav-item">
-          <a
-            href="#"
+        <li className="nav-item" style={{cursor: 'pointer'}}>
+          <p
             className="nav-link dis-start active side-nav"
             aria-current="page"
+            data-bs-toggle="tab"
+            onClick={Dashboard}
           >
             <img
               className="bi ms-2 me-2"
@@ -30,21 +46,21 @@ function Sidebar() {
               height="16"
             ></img>
             Dashboard
-          </a>
+          </p>
         </li>
-        <li>
-          <a href="#" className="nav-link dis-start side-nav text-white">
+        <li style={{cursor: 'pointer'}}>
+          <p className="nav-link dis-start side-nav text-white" data-bs-toggle="tab"  onClick={Acc}>
             <img
               className="bi ms-2 me-2"
-              src={Acc}
+              src={AccImg}
               width="16"
               height="16"
             ></img>
             Accelerators
-          </a>
+          </p>
         </li>
-        <li>
-          <a href="#" className="nav-link dis-start side-nav text-white">
+        <li style={{cursor: 'pointer'}}>
+          <p className="nav-link dis-start side-nav text-white" data-bs-toggle="tab" >
             <img
               className="bi ms-2 me-2"
               src={Report}
@@ -52,7 +68,7 @@ function Sidebar() {
               height="16"
             ></img>
             Reports
-          </a>
+          </p>
         </li>
       </ul>
     </div>
